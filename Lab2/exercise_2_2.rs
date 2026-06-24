@@ -3,7 +3,7 @@
 
 fn main() {
     // 1. if / else as an expression
-    let number = 229; // derived from my reg number (24/EG/CO/229)
+    let number = 288;
     let max = if number % 2 == 0 { "Even" } else { "Odd" };
     println!("{} is {}", number, max);
 
@@ -30,7 +30,7 @@ fn main() {
     println!("Sum 1..=100 = {}", sum);
 
     // TODO 1: Using a for loop and a range, print the multiplication
-    // table for 229, from 229x1 through 229x12
+    // table for 288, from 288x1 through 288x12
     println!("\nMultiplication table for {}", number);
     for i in 1..=12 {
         println!("{} x {} = {}", number, i, number * i);
