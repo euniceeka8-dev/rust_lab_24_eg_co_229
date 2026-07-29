@@ -1,0 +1,9 @@
+C:\Users\VICTOR OKOKO\Documents\rust_lab_24_eg_co_229\target\debug\deps\lab_1-3efd608bdccde28e.d: lab_1\src\main.rs lab_1\src\exercise_1.rs lab_1\src\exercise_2.rs lab_1\src\exercise_3.rs lab_1\src\stretch_goal.rs
+
+C:\Users\VICTOR OKOKO\Documents\rust_lab_24_eg_co_229\target\debug\deps\lab_1-3efd608bdccde28e.exe: lab_1\src\main.rs lab_1\src\exercise_1.rs lab_1\src\exercise_2.rs lab_1\src\exercise_3.rs lab_1\src\stretch_goal.rs
+
+lab_1\src\main.rs:
+lab_1\src\exercise_1.rs:
+lab_1\src\exercise_2.rs:
+lab_1\src\exercise_3.rs:
+lab_1\src\stretch_goal.rs:

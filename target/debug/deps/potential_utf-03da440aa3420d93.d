@@ -1,0 +1,9 @@
+C:\Users\VICTOR OKOKO\Documents\rust_lab_24_eg_co_229\target\debug\deps\potential_utf-03da440aa3420d93.d: C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\lib.rs C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\uchar.rs C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\ustr.rs
+
+C:\Users\VICTOR OKOKO\Documents\rust_lab_24_eg_co_229\target\debug\deps\libpotential_utf-03da440aa3420d93.rlib: C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\lib.rs C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\uchar.rs C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\ustr.rs
+
+C:\Users\VICTOR OKOKO\Documents\rust_lab_24_eg_co_229\target\debug\deps\libpotential_utf-03da440aa3420d93.rmeta: C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\lib.rs C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\uchar.rs C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\ustr.rs
+
+C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\lib.rs:
+C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\uchar.rs:
+C:\Users\VICTOR\ OKOKO\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\potential_utf-0.1.5\src\ustr.rs:

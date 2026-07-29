@@ -11,4 +11,3 @@ fn main() {
     exercise_4::main();
     stretch_goal::run();
 }
-
