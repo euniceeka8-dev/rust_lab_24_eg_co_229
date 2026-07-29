@@ -12,7 +12,7 @@ fn is_prime(n: u32) -> bool {
     if n < 2 {
         return false;
     }
-    (2..=((n as f64).sqrt() as u32)).all(|i| n % i != 0)
+    (2..=((n as f64).sqrt() as u32)).all(|i| !n.is_multiple_of(i))
 }
 
 pub fn run() {
@@ -33,7 +33,7 @@ pub fn run() {
     println!("First 5 even squares: {}", result.join(""));
 
     // fold (reduce)
-    let product: u64 = (1..=10).fold(1, |acc, x| acc * x);
+    let product: u64 = (1..=10).product();
     println!("10! = {}", product);
 
     // TODO 4a: Using only iterator methods (no loops)
@@ -42,13 +42,13 @@ pub fn run() {
         .filter(|x| x % 2 != 0)
         .map(|x| (x * x) as u64)
         .sum();
-    println!("Sum of squares of odd numbers from 1 to 99: {}", sum_odd_squares);
+    println!(
+        "Sum of squares of odd numbers from 1 to 99: {}",
+        sum_odd_squares
+    );
 
     // TODO 4b: Using only iterator methods (no loops)
     // Collect all prime numbers up to 50 into a Vec<u32>
-    let primes: Vec<u32> = (1..=50)
-        .filter(|&x| is_prime(x))
-        .collect();
+    let primes: Vec<u32> = (1..=50).filter(|&x| is_prime(x)).collect();
     println!("Primes up to 50: {:?}", primes);
 }
-

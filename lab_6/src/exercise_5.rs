@@ -1,4 +1,4 @@
-use tokio::time::{sleep, Duration};
+use tokio::time::{Duration, sleep};
 
 async fn fetch_data(id: u32) -> String {
     // Simulate network delay
@@ -7,7 +7,6 @@ async fn fetch_data(id: u32) -> String {
     format!("Data from source {}", id)
 }
 
-#[tokio::main]
 pub async fn main() {
     // Sequential execution
     let t0 = std::time::Instant::now();
@@ -24,12 +23,7 @@ pub async fn main() {
     // Concurrent execution
     let t1 = std::time::Instant::now();
 
-    let (r1, r2, r3, r4) = tokio::join!(
-        fetch_data(1),
-        fetch_data(2),
-        fetch_data(3),
-        fetch_data(4)
-    );
+    let (r1, r2, r3, r4) = tokio::join!(fetch_data(1), fetch_data(2), fetch_data(3), fetch_data(4));
 
     println!("Concurrent: {}", r1);
     println!("Concurrent: {}", r2);
@@ -38,4 +32,3 @@ pub async fn main() {
 
     println!("Concurrent time: {:?}", t1.elapsed());
 }
-

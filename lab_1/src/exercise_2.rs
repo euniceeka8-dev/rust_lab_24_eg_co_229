@@ -5,7 +5,6 @@ pub fn main () {
 
     println!("s2 = {}", s2);
 
-    
     let s3 = String::from("world");
     let s4 = s3.clone();
 
@@ -22,7 +21,7 @@ pub fn main () {
     println!("First word: {}", word);
 }
 
-fn calculate_length(s: &String) -> usize {
+fn calculate_length(s: &str) -> usize {
     s.len()
 }
 
@@ -34,4 +33,3 @@ fn first_word(s: &str) -> &str {
         s
     }
 }
-

@@ -43,11 +43,7 @@ fn parse_and_validate(s: &str, min: i32, max: i32) -> Result<i32, AppError> {
     let n: i32 = s.trim().parse()?;
 
     if n < min || n > max {
-        return Err(AppError::OutOfRange {
-            value: n,
-            min,
-            max,
-        });
+        return Err(AppError::OutOfRange { value: n, min, max });
     }
 
     Ok(n)
@@ -84,4 +80,3 @@ pub fn main() {
         Err(e) => println!("Error: {}", e),
     }
 }
-

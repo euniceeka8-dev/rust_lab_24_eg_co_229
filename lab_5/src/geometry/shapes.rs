@@ -40,5 +40,3 @@ impl Polygon {
         self.vertices.len() >= 3
     }
 }
-
-

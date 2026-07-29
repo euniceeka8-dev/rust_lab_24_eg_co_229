@@ -55,4 +55,3 @@ pub fn main() {
 
     println!("\nTotal Sum = {}", total);
 }
-

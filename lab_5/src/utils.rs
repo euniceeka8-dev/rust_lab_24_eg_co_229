@@ -7,4 +7,3 @@ pub fn print_polygon_info(poly: &Polygon) {
     println!("Perimeter: {:.2}", poly.perimeter());
     println!("Closed: {}", poly.is_closed());
 }
-

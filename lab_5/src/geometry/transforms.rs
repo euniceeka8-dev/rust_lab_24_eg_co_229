@@ -13,4 +13,3 @@ pub fn translate_polygon(poly: &Polygon, dx: f64, dy: f64) -> Polygon {
 
     Polygon { vertices }
 }
-

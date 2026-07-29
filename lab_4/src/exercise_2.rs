@@ -4,7 +4,8 @@ use std::collections::HashMap;
 pub fn word_frequency(text: &str) -> HashMap<String, usize> {
     let mut freq = HashMap::new();
     for word in text.split_whitespace() {
-        let clean: String = word.chars()
+        let clean: String = word
+            .chars()
             .filter(|c| c.is_alphabetic())
             .map(|c| c.to_lowercase().next().unwrap())
             .collect();
@@ -26,7 +27,8 @@ fn top_n(freq: &HashMap<String, usize>, n: usize) -> Vec<(&String, &usize)> {
 
 pub fn run() {
     println!("--- Exercise B: HashMap ---");
-    let text = "the quick brown fox jumps over the lazy dog the fox was very quick and the dog was lazy";
+    let text =
+        "the quick brown fox jumps over the lazy dog the fox was very quick and the dog was lazy";
     let freq = word_frequency(text);
     println!("Word frequencies: {:?}", freq);
 
@@ -36,4 +38,3 @@ pub fn run() {
     }
     println!();
 }
-

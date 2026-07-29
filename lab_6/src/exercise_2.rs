@@ -55,4 +55,3 @@ pub fn main() {
     println!("Final counter: {}", *counter.lock().unwrap());
     println!("Optimized Time: {:?}", start.elapsed());
 }
-

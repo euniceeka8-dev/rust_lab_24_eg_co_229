@@ -1,10 +1,6 @@
 // exercise 2.4
- fn divide(a: f64, b: f64) -> Option<f64> {
-    if b == 0.0 {
-        None
-    } else {
-        Some(a / b)
-    }
+fn divide(a: f64, b: f64) -> Option<f64> {
+    if b == 0.0 { None } else { Some(a / b) }
 }
 
 fn find_first_even(numbers: &[i32]) -> Option<i32> {
@@ -34,4 +30,3 @@ pub fn main() {
         None => println!("No even numbers"),
     }
 }
-

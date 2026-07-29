@@ -18,8 +18,7 @@ impl BankAccount {
         self.balance += amount;
         println!(
             "Deposited ${:.2}. New balance: ${:.2}",
-            amount,
-            self.balance
+            amount, self.balance
         );
     }
 
@@ -50,4 +49,3 @@ pub fn main() {
 
     println!("Final balance: ${:.2}", acc.balance());
 }
-

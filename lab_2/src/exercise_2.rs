@@ -1,8 +1,8 @@
 //exercise 2.3
 #[derive(Debug)]
 enum Shape {
-    Circle(f64),           // radius
-    Rectangle(f64, f64),   // width, height
+    Circle(f64),             // radius
+    Rectangle(f64, f64),     // width, height
     Triangle(f64, f64, f64), // sides a, b, c
 }
 
@@ -44,4 +44,3 @@ pub fn main() {
 
     describe_direction("North");
 }
-

@@ -18,7 +18,7 @@ fn count_lines(path: &str) -> io::Result<usize> {
     Ok(reader.lines().count())
 }
 
-// TODO 4:write a function that recursively lists all .rs files 
+// TODO 4:write a function that recursively lists all .rs files
 // under a given directory using std
 fn list_rs_files(dir: &str) -> io::Result<()> {
     for entry in fs::read_dir(dir)? {
@@ -31,6 +31,10 @@ fn list_rs_files(dir: &str) -> io::Result<()> {
             if ext == "rs" {
                 println!("{}", path.display());
             }
+        } else if let Some(ext) = path.extension()
+            && ext == "rs"
+        {
+            println!("{}", path.display());
         }
     }
 
@@ -69,4 +73,3 @@ pub fn main() -> io::Result<()> {
 
     Ok(())
 }
-

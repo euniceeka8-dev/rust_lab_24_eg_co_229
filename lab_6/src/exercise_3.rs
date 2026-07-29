@@ -31,7 +31,11 @@ pub fn main() {
     let (tx, rx) = mpsc::channel();
 
     let dataset: Vec<Vec<u64>> = (0..4)
-        .map(|i| ((i * 250 + 1)..=((i + 1) * 250)).map(|x| x as u64).collect())
+        .map(|i| {
+            ((i * 250 + 1)..=((i + 1) * 250))
+                .map(|x| x as u64)
+                .collect()
+        })
         .collect();
 
     for (id, chunk) in dataset.into_iter().enumerate() {
@@ -60,4 +64,3 @@ pub fn main() {
 
     println!("\nGrand Total = {}", total);
 }
-

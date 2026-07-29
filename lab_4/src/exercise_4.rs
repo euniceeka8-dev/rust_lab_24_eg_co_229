@@ -23,7 +23,7 @@ impl Iterator for Fibonacci {
 }
 
 /* TODO 6: Implement a `Primes` struct that is an infinite iterator
-    yielding prime numbers using a sieve approach. */
+yielding prime numbers using a sieve approach. */
 struct Primes {
     current: u64,
     primes_found: Vec<u64>,
@@ -51,7 +51,7 @@ impl Iterator for Primes {
                 .primes_found
                 .iter()
                 .take_while(|&&p| p * p <= candidate)
-                .all(|&p| candidate % p != 0);
+                .all(|&p| !candidate.is_multiple_of(p));
 
             if is_prime {
                 self.primes_found.push(candidate);
@@ -75,4 +75,3 @@ pub fn run() {
     let first_20_primes: Vec<u64> = Primes::new().take(20).collect();
     println!("First 20 Primes: {:?}", first_20_primes);
 }
-

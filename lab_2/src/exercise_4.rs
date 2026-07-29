@@ -15,4 +15,3 @@ pub fn main() {
         println!("{}", fizzbuzz(i));
     }
 }
-

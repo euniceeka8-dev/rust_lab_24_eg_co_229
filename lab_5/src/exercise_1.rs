@@ -1,11 +1,7 @@
 // The compiler needs to know which input reference
 // the output reference is tied to.
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() >= y.len() {
-        x
-    } else {
-        y
-    }
+    if x.len() >= y.len() { x } else { y }
 }
 
 // Struct holding a reference — must be annotated
@@ -20,7 +16,7 @@ impl<'a> Important<'a> {
 }
 
 // TODO 1 Solution
-fn first_sentence<'a>(text: &'a str) -> &'a str {
+fn first_sentence(text: &str) -> &str {
     match text.find('.') {
         Some(index) => &text[..index],
         None => text,
@@ -47,7 +43,6 @@ pub fn main() {
     let text1 = "Rust is fast. It is also safe.";
     println!("First sentence: {}", first_sentence(text1));
 
-    let text2 = "No period in this sentence";
+    let text2 = "No dot in this sentence";
     println!("First sentence: {}", first_sentence(text2));
 }
-

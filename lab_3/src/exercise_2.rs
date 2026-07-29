@@ -5,7 +5,7 @@ trait Describable {
 
     // Default method
     fn short_name(&self) -> String {
-        format!("{}", &self.describe()[..20.min(self.describe().len())])
+        self.describe()[..20.min(self.describe().len())].to_string()
     }
 }
 
@@ -48,8 +48,7 @@ impl Describable for Rectangle {
     fn describe(&self) -> String {
         format!(
             "Rectangle with width {:.2} and height {:.2}",
-            self.width,
-            self.height
+            self.width, self.height
         )
     }
 }
@@ -90,4 +89,3 @@ pub fn main() {
     println!("{}", c);
     println!("{}", r);
 }
-

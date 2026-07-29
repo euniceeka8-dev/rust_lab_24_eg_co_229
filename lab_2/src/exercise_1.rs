@@ -2,24 +2,16 @@ pub fn main() {
     // if as an expression
     let number: i32 = 7;
 
-    let description = if number % 2 == 0 {
-        "even"
-    } else {
-        "odd"
-    };
+    let description = if number % 2 == 0 { "even" } else { "odd" };
 
     println!("{} is {}", number, description);
-     let number: i32 = 229;
+    let number: i32 = 229;
 
-    let description = if number % 2 == 0 {
-        "even"
-    } else {
-        "odd"
-    };
+    let description = if number % 2 == 0 { "even" } else { "odd" };
 
     println!("{} is {}", number, description);
 
-    // loop with break value
+    // loop with break value ...
     let mut counter = 0;
 
     let result = loop {
@@ -50,4 +42,3 @@ pub fn main() {
         println!("7 x {} = {}", i, 7 * i);
     }
 }
-

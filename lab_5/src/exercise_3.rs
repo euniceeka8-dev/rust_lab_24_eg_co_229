@@ -20,4 +20,3 @@ pub fn main() {
     println!("\nTranslated Polygon");
     print_polygon_info(&moved);
 }
-

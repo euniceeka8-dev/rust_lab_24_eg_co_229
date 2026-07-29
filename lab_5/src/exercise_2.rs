@@ -69,4 +69,3 @@ pub fn main() {
     let products = zip_with(&a, &b, |x, y| x * y);
     println!("Products: {:?}", products);
 }
-
